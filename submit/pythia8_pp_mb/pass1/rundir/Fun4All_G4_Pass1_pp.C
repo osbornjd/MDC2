@@ -76,7 +76,9 @@ int Fun4All_G4_Pass1_pp(
   //===============
 
 // set pp mode for extended readout
-//  TRACKING::pp_mode = true;
+  TRACKING::pp_mode = true;
+  TRACKING::pp_extended_readout_time = 90000;
+
   // Enable this is emulating the nominal pp/pA/AA collision vertex distribution
   Input::BEAM_CONFIGURATION = Input::pp_COLLISION; // This is for pp
 
